@@ -45,18 +45,22 @@ html::-webkit-scrollbar-thumb {
 
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 3rem 9%;
-    background: rgba(0, 0, 0, 0.884);
+    background: rgba(0, 0, 0, 0.767);
     filter: drop-shadow(5px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
+    position: sticky;
+    top: 0;
+    transition: top 0.25s ease-in-out;
 }
+
+.hidden {
+    top: -100px;
+  }
 
 .logo {
     font-size: 3rem;
@@ -134,7 +138,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 section {
-    padding: 5rem 9% 5rem;
+    padding: 2rem 9%;
 }
 
 .home {
@@ -143,7 +147,6 @@ section {
     justify-content: center;
     gap: 8rem;
     background: var(--bg-color);
-    margin-top: 40px;
 }
 
 .home .home-content h1 {
@@ -271,10 +274,10 @@ span {
 @media (max-width:995px) {
     .home {
         flex-direction: column;
-        margin: 5rem 4rem;
+        margin: 0rem 4rem;
     }
 
-    .home.home-content h3 {
+    .home .home-content h3 {
         font-size: 2.5rem;
     }
 
@@ -283,8 +286,8 @@ span {
     }
 
     .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
+        width: 65vw;
+        margin-top: 0rem;
     }
 }
 
@@ -397,7 +400,6 @@ span {
     width: 250px;
     height: 250px;
     border: 2px solid var(--green-color);
-    border-radius: 5px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -426,7 +428,6 @@ span {
     top: 0;
     left: 0;
     transition: 0.4s ease-in-out;
-    border-radius: 5px;
 }
 
 .project-box h3{
@@ -751,6 +752,12 @@ span {
     text-align: center;
 }
 
+.cv-btn a{
+    color: var(--main-color);
+}
+.cv-btn a:hover{
+    color: var(--bg-color);
+}
 @media all and (max-width:768px) {
     .contact-details{
         display: flex;
@@ -802,7 +809,7 @@ span {
 
 .footer .social {
     text-align: center;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     color: black;
 }
 
@@ -858,9 +865,9 @@ I .footer ul {
 }
 
 footer .copyright {
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: black;
 }
 
@@ -877,7 +884,7 @@ footer .copyright {
     }
 
     section {
-        padding: 10rem 3% 2rem;
+        padding: 5rem 3% 2rem;
     }
 
     .footer {
@@ -887,7 +894,8 @@ footer .copyright {
 
 
 section{
-    padding-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 
