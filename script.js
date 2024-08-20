@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", function() {
     // Menu Toggle
     const menuIcon = document.getElementById('menu-icon');
