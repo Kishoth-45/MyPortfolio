@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('keyup', handleKeyUp);
 });
-=======
+
 document.addEventListener("DOMContentLoaded", function() {
     // Menu Toggle
     const menuIcon = document.getElementById('menu-icon');
@@ -171,4 +171,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('keyup', handleKeyUp);
 });
->>>>>>> c1ea375065760398a0bdaf4c3f01a95c26066174
+
